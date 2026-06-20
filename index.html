@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Délices Africains</title>
+  <link rel="stylesheet" href="style.css">
+   <!-- Importation d'une police chaleureuse et moderne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+   <!-- ===== HEADER & NAVBAR ===== -->
+  <header class="site-header">
+    <div class="header-container">
+    <a href="#accueil" class="logo-container">
+        <img src="logo.png" alt="Logo Les Délices Africains" class="logo-img">
+      </a>
+
+       <!-- Bouton Menu Mobile (Burger) -->
+      <button class="mobile-nav-toggle" aria-label="Menu de navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#menus">Menus</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#reservation" class="btn btn-nav">Réserver</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="accueil" class="hero">
+    <div class="hero-slideshow"></div>
+    <div class="hero-content">
+      <h1>Bienvenue sur la page Web du restaurant  <br><span class="brand-name">Les Délices Africains</span></h1>
+      <p class="hero-tagline">Saveurs authentiques • Ambiance chaleureuse • L'Afrique dans votre assiette</p>
+      <div class="hero-actions">
+        <a href="#menus" class="btn btn-secondary">Découvrir nos menus</a>
+        <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== À PROPOS ===== -->
+  <section id="apropos" class="section section-about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-subtitle">Notre Histoire</span>
+          <h2>Une passion culinaire transmise de génération en génération</h2>
+          <p>
+            Au restaurant <strong>Les Délices Africains</strong>, nous célébrons la richesse et la diversité gastronomique du continent. 
+            Chaque plat est une invitation au voyage, préparé avec des ingrédients frais, des épices sélectionnées et le respect des recettes traditionnelles.
+          </p>
+          <p>
+            Que vous soyez amateur de viandes braisées parfumées, de sauces riches mijotées ou de douceurs exotiques, notre cuisine saura éveiller vos sens et vous offrir une expérience mémorable.
+          </p>
+           
+          <!-- EMPLACEMENT 1 : SYMBOLE TRADITIONNEL BIEN VISIBLE SOUS LE TEXTE -->
+          <div class="about-cultural-badge">
+            <img src="./assets/images/sy2.jpg" alt="Symbole traditionnel de bienvenue">
+            <span>Tradition & Authenticité</span>
+          </div>
+        </div>
+         <div class="about-image-wrapper">
+          <img src="./assets/images/hero.jpg" alt="Ambiance Les Délices Africains" class="about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== MENUS ===== -->
+  <section id="menus" class="section section-menus">
+    <div class="container">
+      <span class="section-subtitle">Gastronomie</span>
+      <h2>Nos Incontournables (Menus)</h2>
+      <!-- EMPLACEMENT 2 : SYMBOLE CULTUREL EN SÉPARATEUR DE TITRE -->
+      <div class="title-separator">
+        <img src="./assets/images/sy3.jpg" alt="Symbole traditionnel">
+      </div>
+      <div class="menu-grid">
+
+        <!-- Carte 1 : Plat du Jour -->
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Plat du Jour</h3>
+            <span class="price">5 000 F</span>
+          </div>
+          <p class="menu-desc">Sanguié au niébwè. Un équiveau parfait de saveurs traditionnelles préparé chaque matin.</p>
+        </div>
+
+        <!-- Carte 2 : Menu Découverte (Mis en avant) -->
+        <div class="menu-card highlighted">
+          <div class="menu-badge">Populaire</div>
+          <div class="menu-card-header">
+            <h3>Menu Découverte</h3>
+            <span class="price">7 500 F</span>
+          </div>
+          <p class="menu-desc">Entrée + Plat + Dessert au choix. Idéal pour explorer l'ensemble de notre savoir-faire.</p>
+        </div>
+
+        <!-- Carte 3 : Autre plat -->
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Poulet Directeur Général</h3>
+            <span class="price">4 500 F</span>
+          </div>
+          <p class="menu-desc">Un délicieux ragoût de poulet frit aux plantains et légumes croquants.</p>
+        </div>
+        
+        <!-- Carte 4 : Athiéké Poisson -->
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Athiéké Poisson</h3>
+            <span class="price">3 000 F</span>
+          </div>
+          <p class="menu-desc">Faites voyager vos papilles vers la Côte d'Ivoire.</p>
+        </div>
+      </div>
+
+       <!-- FORMULAIRE DE RÉSERVATION -->
+      <div id="reservation" class="reservation-card">
+        <div class="reservation-header">
+          <h3>Réserver une table</h3>
+          <p>Planifiez votre moment d'exception en quelques clics</p>
+        </div>
+         <form id="reservation-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name">Nom complet</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder=" " required>
+            <label for="phone">Téléphone</label>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+              <input type="time" id="time" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="number" id="guests" placeholder=" " min="1" required>
+            <label for="guests">Nombre de personnes</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Confirmer la réservation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section id="galerie" class="section section-gallery">
+    <div class="container">
+      <span class="section-subtitle">En images</span>
+      <h2>Notre univers en Galerie</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="./assets/images/ap.jpg" alt="Athiké Poisson "></div>
+        <div class="gallery-item"><img src="./assets/images/8.jpg" alt="Bouillon de Poisson épicée"></div>
+        <div class="gallery-item"><img src="./assets/images/7.jpg" alt="Ailes Braisées"></div>
+        <div class="gallery-item"><img src="./assets/images/5.jpg" alt="Paquet de Concombre"></div>
+        <div class="gallery-item"><img src="./assets/images/2.jpg" alt="Niébwè de Sanglier"></div>
+        <div class="gallery-item"><img src="./assets/images/4.jpg" alt="Poisson fumé + peau de beuf à l'odica"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Colonne 1 : À propos / Brand -->
+      <div class="footer-column brand-col">
+        <img src="logo.png" alt="Les Délices Africains" class="footer-logo">
+        <p class="footer-brand-desc">Une immersion gastronomique unique au cœur des traditions culinaires africaines.</p>
+      </div>
+
+      <!-- Colonne 2 : Liens rapides -->
+      <div class="footer-column">
+        <h3>Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#menus">Nos Menus</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 : Contact & Infos -->
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul class="footer-contact-info">
+          <li><span class="footer-icon">📍</span> Libreville, Gabon</li>
+          <li><span class="footer-icon">📞</span> (+241) 077 84 84 05</li>
+          <li><span class="footer-icon">✉️</span> contact@delicesafricain.fr</li>
+        </ul>
+      </div>
+
+       <!-- Colonne 4 : Réseaux Sociaux -->
+     <div class="social-links">
+  <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-btn facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  
+  <a href="https://wa.me/241077848405" target="_blank" aria-label="WhatsApp" class="social-btn whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  
+  <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="social-btn youtube">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+</div>
+
+  <!-- Bandeau inférieur des droits d'auteur -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 Les Délices Africains. Tous droits réservés.</p>
+        <p class="footer-credits">Conçu avec passion</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
